@@ -15,22 +15,22 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "r-project"
+  icon = "python"
   icon_pack = "fab"
-  name = "R"
-  description = "90%"
+  name = "Python"
+  description = "Data cleaning and exploration"
   
 [[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  icon = "microsoft"
+  icon_pack = "fab"
+  name = "Excel, Powerpoint, Power BI"
+  description = "Data visualization and dashboarding"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "users"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Team Player"
+  description = "Communication and collaboration in a team setting"
 
 # Uncomment to use emoji icons.
 # [[feature]]
