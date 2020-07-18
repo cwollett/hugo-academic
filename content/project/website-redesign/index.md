@@ -31,16 +31,6 @@ slides: ""
 
 Ohio University's Division of Finance and Administration approved a project to redesign three websites within their web presence. The main goals of the project were to modernize the overall appearance of the sites and make them more user-friendly and accessible. The project team included a communications specialist, change management assistance, graphic designers, and technological specialists. In addition, stakeholders from the impacted departments were involved from the beginning to ensure the site served internal needs as well as those of the customer base.
 
-## Role
-
-As the Web Specialist on the project, my role was to ensure that the new sites met the needs of all parties involved. This meant ensuring the site was:
-
-- Accessible
-- Responsive
-- User-friendly
-
-While the above items would be mostly handled due to the University's use of a Content Management System (CMS), there were further requirements to meet based on the individual offices involved in the project.
-
 ## Process
 
 While the project encompassed sites for three different entities within the University, the process for redesign was similar for each case. For simplicity, this post will focus on the main Finance site process. For each site, an audit was completed of the department's current sitemap and file listing to give a high-level understanding of the items the department had available. Next, the communications and web specialists met with each department to understand their audience and their business objectives. This meeting had a few goals:

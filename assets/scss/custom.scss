@@ -13,3 +13,12 @@ img[alt='Redesigned Finance site'] { width: 240px; };
 .article-container {max-width: 896px;};
 .footer-container {background-color: #333333;};
 .site-footer {color: #899596;};
+.article-style aside, .alert-note {
+    color: #1e7e12;
+    background-color: #f6fef6;
+    border-color: #3d8b40;
+};
+.article-style aside p::before, div.alert>div:first-child::before {
+    color: #3d8b40;
+    content: '\f101';
+}
