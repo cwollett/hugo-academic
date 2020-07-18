@@ -32,7 +32,9 @@ slides: ""
 Ohio University's Division of Finance and Administration approved a project to redesign three websites within their web presence. The main goals of the project were to modernize the overall appearance of the sites and make them more user-friendly and accessible. The project team included a communications specialist, change management assistance, graphic designers, and technological specialists. In addition, stakeholders from the impacted departments were involved from the beginning to ensure the site served internal needs as well as those of the customer base.
 
 ## Role
+
 As the Web Specialist on the project, my role was to ensure that the new sites met the needs of all parties involved. This meant ensuring the site was:
+
 - Accessible
 - Responsive
 - User-friendly
@@ -40,45 +42,36 @@ As the Web Specialist on the project, my role was to ensure that the new sites m
 While the above items would be mostly handled due to the University's use of a Content Management System (CMS), there were further requirements to meet based on the individual offices involved in the project.
 
 ## Process
-Due to the differences in each site, the project was broken down into three phases - one for each site being redesigned. While there was some overlap in the timeline, this allowed the project team to focus on one business process at a time as each department's customer base differed greatly.
 
-Despite the differences in each site, the overall process was similar. The project began by looking over an audit of the current site's sitemap and file listing to give a high-level understanding of the items the department had available. Next, the communications and web specialists met with each department to understand their audience and their business objectives. This allowed the team to know what items within the initial site audit needed to be kept in the migration as well as beging to develop ideas for the overall look and functionality of the new site based on the intended audience. For instance, one department involved in the project is more student-facing than the others and the template used for their new site was modeled heavily off other student-facing sites within the Universiy's web presence.
+While the project encompassed sites for three different entities within the University, the process for redesign was similar for each case. For simplicity, this post will focus on the main Finance site process. For each site, an audit was completed of the department's current sitemap and file listing to give a high-level understanding of the items the department had available. Next, the communications and web specialists met with each department to understand their audience and their business objectives. This meeting had a few goals:
 
-Next, the project moved into the information architecture phase. For the largest site in the project, Finance, this included a user survey to campus, as that was identified as the main audience, to see what items they found most important for their daily activities. The survey also asked users how well they were able to currently find specific items and information on the site as an attempt to test the current navigational structure. Following the surveys, a focus group of users was put together to ask more specific questions. During these focus group sessions, members were asked to complete a card sort. Topics within the task were taken directly from the survey as items users identified needing to find on a Finance website. Results of this sort were analyzed in both Excel and using R to find correlations among categories and information locations. This gave a final dendrogram that helped to drive where information would be located within the new site.
+- Determine which items in the site audit could be discarded in the migration
+- Categorize items based on intended audience
+- Develop content workflows to start planning for navigation structure in the new site
+
+In order to get audience feedback, a user survey was distributed campus-wide to see what items they found most important for their daily activities. The survey also asked users how well they were able to currently find specific items and information on the site as an attempt to test the current navigational structure. Following the surveys, a focus group of users was put together to ask more specific questions. During these focus group sessions, members were asked to complete a card sort. Topics within the task were taken directly from the survey as items users identified needing to find on a Finance website. Results of this sort were analyzed in both Excel and using R to find correlations among categories and information locations. This gave a final dendrogram that helped to drive where information would be located within the new site.
 
 [![Card sort correlation percentages](card-sort-results.png)](card-sort-results.png)
 [![Snapshot of the dendrogram results](navigation-dendrogram.png)](navigation-dendrogram.png)
 
-To validate the proposed navigational structure, one-on-one sessions were set up with focus group participants to have them complete a tree test. This asked users to use the new navigation to show how they would go about finding specfic topics of information. While the first round had a few items that proved difficult to find, a few tweaks to the navigation provided a navigational structure that seemed to prove far more intuitive than the one initially in place.
+To validate the proposed navigational structure, one-on-one sessions were set up with focus group participants to have them complete a tree test. This asked users to use the new navigation to show how they would go about finding specific topics of information. While the first round had a few items that proved difficult to find, a few tweaks to the navigation provided a navigational structure that seemed far more intuitive than the one initially in place.
 
 [![Tree test pass/fail percentages](tree-test-results.png)](tree-test-results.png)
 
-During the navigation vetting, designs were being created to incorporate the requirements from stakeholders. Sketched wireframes had been completed prior to finalizing the navigation to get a block layout as a template for multiple pages. Once the tree sort was completed, colored mockups were created to incorporate the need for an additional resources location - an item determined necessary because of the tree sort. Once these were delivered to the development team to implement as templates, the University Communications and Marketing team had their graphic designers take a look and give a mockup for comparison.
+Once the tree sort was completed, colored mockups were created to incorporate the need for an additional resources location - an item determined necessary because of the tree sort. Once these were delivered to the development team to implement as templates, the University Communications and Marketing team had their graphic designers take a look and give a mockup for comparison.
 
 [![Original financial site mockup](original-finance-mockup.png)](original-finance-mockup.png)
 [![UCM finance site mockup](ucm-finance-mockup.jpg)](ucm-finance-mockup.jpg)
 
-The graphic designers met with the rest of the project team to finalize the most needed items on the site as well as the direction the University wanted to take with its brand appeal moving forward. The team was then able to come up with a new design that incorporated stakeholder and audience needs as well as act as a marketing tool for the University.
-
-[![Final finance site mockup](final-finance-mockup.png)](final-finance-mockup.png)
-[![UCM finance site mockup](ucm-finance-mockup.jpg)](ucm-finance-mockup.jpg)
+The graphic designers met with the rest of the project team to finalize the most needed items on the site as well as the direction the University wanted to take with its brand appeal moving forward. The team was then able to come up with a new design that incorporated stakeholder and audience needs as well as act as a marketing tool for the University. Comparisons between the original site and the redesigned one can be seen at the end of this post.
 
 ## Implementation
-With designs and research complete, content was able to be migrated into the sites. For the first two sites in the project, this included creating the new pages within CommonSpot and documenting the process to train future editors on maintaining the site. All items added to these new pages were implemented with open permissions so that editors would be able to tweak content as their needs changed.
 
-For the Finance website, the project timeline overlapped with a shift in the CMS being used by the University. This meant working with the IT team on getting an instance of Drupal set up and usable. The new CMS allowed increased functionality within the site as a whole, leading to additions in content to the site. News feeds were given added tagging systems to be used by multiple offices as an annoucements module. Staff listings separated by office were added with editors being able to add biographies and responsibilites at a later date if desired. In addition, JavaScript libraries were added to tables to add sorting and searching capabilities. The JS library also allows excess columns to "hide" as screen sizes shrink so that users are able to see the most useful information on page load.
+With designs and research complete, content was able to be migrated into the sites. The project timeline overlapped with a shift in the CMS being used by the University. This meant working with the IT team on getting an instance of Drupal set up and usable. The new CMS allowed increased functionality within the site as a whole, leading to additions in content to the site. News feeds were given added tagging systems to be used by multiple offices as an announcements module. Staff listings separated by office were added with editors being able to add biographies and responsibilities at a later date if desired. In addition, JavaScript libraries were added to tables to add sorting and searching capabilities. The JS library also allows excess columns to "hide" as screen sizes shrink so that users are able to see the most useful information on page load.
 
-## Before/After Comparisons
-The redesign included sites for three entities within the University. Click on each department name below to be taken to the current version of the site.
+By the end of the project, the Finance site had a new navigational structure. This included not only the menu levels, but also quick-access links to the most used items. The goal was to lower the amount of time, and clicks, for users to get to their content, alleviating stress and frustration as the most common users were other employees. I was also able to clean up years of unused files and instruct staff members on best practices for web files to combat potential link breakages or file duplication. The images below show the before/after comparison. As the University was undergoing further website branding updates, click the header to be taken to the most up-to-date version of the site.
 
-### <center>[Office of the Bursar](https://ohio.edu/bursar)</center>
-[![Original Office of the Bursar site](old-bursar-home.png)](old-bursar-home.png)
-[![Redesigned Office of the Bursar site](new-bursar-home.png)](new-bursar-home.png)
+### [Finance](https://ohio.edu/finance-administration)
 
-### <center>[Division of Finance and Administration](https://ohio.edu/finance-administration)</center>
-[![Original Finance and Administration site](old-finadmin-home.png)](old-finadmin-home.png)
-[![Redesigned Finance and Administration site](new-finadmin-home.png)](new-finadmin-home.png)
-
-### <center>[Finance](https://ohio.edu/finance-administration)</center>
 [![Original Finance site](old-finance-home.png)](old-finance-home.png)
 [![Redesigned Finance site](new-finance-home.png)](new-finance-home.png)
