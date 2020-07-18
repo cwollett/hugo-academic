@@ -47,7 +47,7 @@ Despite the differences in each site, the overall process was similar. The proje
 Next, the project moved into the information architecture phase. For the largest site in the project, Finance, this included a user survey to campus, as that was identified as the main audience, to see what items they found most important for their daily activities. The survey also asked users how well they were able to currently find specific items and information on the site as an attempt to test the current navigational structure. Following the surveys, a focus group of users was put together to ask more specific questions. During these focus group sessions, members were asked to complete a card sort. Topics within the task were taken directly from the survey as items users identified needing to find on a Finance website. Results of this sort were analyzed in both Excel and using R to find correlations among categories and information locations. This gave a final dendrogram that helped to drive where information would be located within the new site.
 
 [![Card sort correlation percentages](card-sort-results.png)](card-sort-results.png)
-[![Snapshot of the dendrogram results](navigation-dendogram.png)](navigation-dendogram.png)
+[![Snapshot of the dendrogram results](navigation-dendrogram.png)](navigation-dendrogram.png)
 
 To validate the proposed navigational structure, one-on-one sessions were set up with focus group participants to have them complete a tree test. This asked users to use the new navigation to show how they would go about finding specfic topics of information. While the first round had a few items that proved difficult to find, a few tweaks to the navigation provided a navigational structure that seemed to prove far more intuitive than the one initially in place.
 
@@ -56,12 +56,12 @@ To validate the proposed navigational structure, one-on-one sessions were set up
 During the navigation vetting, designs were being created to incorporate the requirements from stakeholders. Sketched wireframes had been completed prior to finalizing the navigation to get a block layout as a template for multiple pages. Once the tree sort was completed, colored mockups were created to incorporate the need for an additional resources location - an item determined necessary because of the tree sort. Once these were delivered to the development team to implement as templates, the University Communications and Marketing team had their graphic designers take a look and give a mockup for comparison.
 
 [![Original financial site mockup](original-finance-mockup.png)](original-finance-mockup.png)
-[![UCM finance site mockup](ucm-finance-mockup.png)](ucm-finance-mockup.png)
+[![UCM finance site mockup](ucm-finance-mockup.jpg)](ucm-finance-mockup.jpg)
 
 The graphic designers met with the rest of the project team to finalize the most needed items on the site as well as the direction the University wanted to take with its brand appeal moving forward. The team was then able to come up with a new design that incorporated stakeholder and audience needs as well as act as a marketing tool for the University.
 
 [![Final finance site mockup](final-finance-mockup.png)](final-finance-mockup.png)
-[![UCM finance site mockup](ucm-finance-mockup.png)](ucm-finance-mockup.png)
+[![UCM finance site mockup](ucm-finance-mockup.jpg)](ucm-finance-mockup.jpg)
 
 ## Implementation
 With designs and research complete, content was able to be migrated into the sites. For the first two sites in the project, this included creating the new pages within CommonSpot and documenting the process to train future editors on maintaining the site. All items added to these new pages were implemented with open permissions so that editors would be able to tweak content as their needs changed.
@@ -81,4 +81,4 @@ The redesign included sites for three entities within the University. Click on e
 
 ### <center>[Finance](https://ohio.edu/finance-administration)</center>
 [![Original Finance site](old-finance-home.png)](old-finance-home.png)
-[![Redesigned finance site](new-finance-home.png)](new-finance-home.png)
+[![Redesigned Finance site](new-finance-home.png)](new-finance-home.png)
