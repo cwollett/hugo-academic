@@ -8,7 +8,7 @@ summary: Project as part of Uadcity's Intro to Machine Learning course (2016).
 external_link: ""
 
 image:
-  caption: Enron logo
+  caption: Photo by Steve Ueckert, Houston Chronicle 
   focal_point: Smart
 
 links:
@@ -63,12 +63,12 @@ On the feature side of things, a DataFrame was utilized to see how many data ent
 
 The rows highlighted were removed due to coverage concerns. Either there was very little converage, or the coverage seemed disproportionate between POIs and non-POIs. I did not want any algorithms to notice perfect coverage for POIs and immediately assign anyone with a valid data point in that category to be assigend POI status. From there, the following columns were introduced to the dataframe to incorporate removed data as well as acting as a scaling of the data:
 
-`percentage_bonus = bonus / total_payments`
-`percentage_salary = salary / total_payments`
-`percentage_exercised_stock = exercised_stock_options / total_stock_value`
-`percentage_from_poi = from_poi_to_this_person / to_messages`
-`percentage_to_poi = from_this_person_to_poi / from_messages`
-`percentage_shared_with_poi = shared_receipt_with_poi / to_messages`
+```percentage_bonus = bonus / total_payments```
+```percentage_salary = salary / total_payments```
+```percentage_exercised_stock = exercised_stock_options / total_stock_value```
+```percentage_from_poi = from_poi_to_this_person / to_messages```
+```percentage_to_poi = from_this_person_to_poi / from_messages```
+```percentage_shared_with_poi = shared_receipt_with_poi / to_messages```
 
 For additional exploration of outlier activity, seaborn was utilized to show boxplots of the possible features. This allowed a row corresponding to TOTAL to be found. This row is quite common on spreadsheets but unwanted when it comes to trying to predict POIs. As such, it was removed from the data. While the boxplots showed numerous other points that may statistically be categorized as outliers, they corresponded to actual employees and were kept. For instance, what appears to be an unnaturally large bonus or stock option for a particular employee may be a sure sign of being involved with the scandal.
 
