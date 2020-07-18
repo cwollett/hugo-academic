@@ -46,30 +46,22 @@ Despite the differences in each site, the overall process was similar. The proje
 
 Next, the project moved into the information architecture phase. For the largest site in the project, Finance, this included a user survey to campus, as that was identified as the main audience, to see what items they found most important for their daily activities. The survey also asked users how well they were able to currently find specific items and information on the site as an attempt to test the current navigational structure. Following the surveys, a focus group of users was put together to ask more specific questions. During these focus group sessions, members were asked to complete a card sort. Topics within the task were taken directly from the survey as items users identified needing to find on a Finance website. Results of this sort were analyzed in both Excel and using R to find correlations among categories and information locations. This gave a final dendrogram that helped to drive where information would be located within the new site.
 
-<p float="left">
-  <img src="content\project\website-redesign\card-sort-results.png" width="240" />
-  <img src="content\project\website-redesign\navigation-dendogram.png" width="240" /> 
-</p>
+[![](card-sort-results.png)](card-sort-results.png)
+[![](navigation-dendogram.png)](navigation-dendogram.png)
 
 To validate the proposed navigational structure, one-on-one sessions were set up with focus group participants to have them complete a tree test. This asked users to use the new navigation to show how they would go about finding specfic topics of information. While the first round had a few items that proved difficult to find, a few tweaks to the navigation provided a navigational structure that seemed to prove far more intuitive than the one initially in place.
 
-<p float="left">
-  <img src="content\project\website-redesign\tree-test-results.png" width="240" />
-</p>
+[![](tree-test-results.png)](tree-test-results.png)
 
 During the navigation vetting, designs were being created to incorporate the requirements from stakeholders. Sketched wireframes had been completed prior to finalizing the navigation to get a block layout as a template for multiple pages. Once the tree sort was completed, colored mockups were created to incorporate the need for an additional resources location - an item determined necessary because of the tree sort. Once these were delivered to the development team to implement as templates, the University Communications and Marketing team had their graphic designers take a look and give a mockup for comparison.
 
-<p float="left">
-  <img src="content\project\website-redesign\original-finance-mockup.png" width="240" />
-  <img src="content\project\website-redesign\ucm-finance-mockup.png" width="240" /> 
-</p>
+[![](original-finance-mockup.png)](original-finance-mockup.png)
+[![](ucm-finance-mockup.png)](ucm-finance-mockup.png)
 
 The graphic designers met with the rest of the project team to finalize the most needed items on the site as well as the direction the University wanted to take with its brand appeal moving forward. The team was then able to come up with a new design that incorporated stakeholder and audience needs as well as act as a marketing tool for the University.
 
-<p float="left">
-  <img src="content\project\website-redesign\final-finance-mockup.png" width="240" />
-  <img src="content\project\website-redesign\ucm-finance-mockup.png" width="240" /> 
-</p>
+[![](final-finance-mockup.png)](final-finance-mockup.png)
+[![](ucm-finance-mockup.png)](ucm-finance-mockup.png)
 
 ## Implementation
 With designs and research complete, content was able to be migrated into the sites. For the first two sites in the project, this included creating the new pages within CommonSpot and documenting the process to train future editors on maintaining the site. All items added to these new pages were implemented with open permissions so that editors would be able to tweak content as their needs changed.
@@ -79,21 +71,14 @@ For the Finance website, the project timeline overlapped with a shift in the CMS
 ## Before/After Comparisons
 The redesign included sites for three entities within the University. Click on each department name below to be taken to the current version of the site.
 
-### [Office of the Bursar](https://ohio.edu/bursar)
-<p float="left">
-  <img src="content\project\website-redesign\old-bursar-home.png" width="240" />
-  <img src="content\project\website-redesign\new-bursar-home.png" width="240" /> 
-</p>
+### <center>[Office of the Bursar](https://ohio.edu/bursar)</center>
+[![](old-bursar-home.png)](old-bursar-home.png)
+[![](new-bursar-home.png)](new-bursar-home.png)
 
 ### [Division of Finance and Administration](https://ohio.edu/finance-administration)
-<p float="left">
-  <img src="content\project\website-redesign\old-finadmin-home.png" width="240" />
-  <img src="content\project\website-redesign\new-finadmin-home.png" width="240" /> 
-</p>
+[![](old-finadmin-home.png)](old-finadmin-home.png)
+[![](new-finadmin-home.png)](new-finadmin-home.png)
 
 ### [Finance](https://ohio.edu/finance-administration)
-<p float="left">
-  <img src="content\project\website-redesign\old-finance-home.png" width="240" />
-  <img src="content\project\website-redesign\new-finance-home.png" width="240" /> 
-</p>
-
+[![](old-finance-home.png)](old-finance-home.png)
+[![](new-finance-home.png)](new-finance-home.png)
