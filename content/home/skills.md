@@ -18,13 +18,13 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "Data cleaning and exploration"
+  description = "Data gathering, cleaning, and exploration"
   
 [[feature]]
   icon = "microsoft"
   icon_pack = "fab"
-  name = "Excel, Powerpoint, Power BI"
-  description = "Data visualization and dashboarding"  
+  name = "Microsoft Suite"
+  description = "Data visualization and dashboarding using Excel, Powerpoint, and Power BI"  
   
 [[feature]]
   icon = "users"

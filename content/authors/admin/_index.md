@@ -63,6 +63,6 @@ email: ""
 # - Visitors
 ---
 
-Chelsie Wollett is a data nerd currently working in economic development. Her professional interests include wrangling and analyzing large datasets to aide business ventures. Helping communities and businesses make data-driven decisions can lead to reduced costs and increased efficiency in future opeartions.
+I can sum myself up in two words: **Data Nerd**. From a young age I was drawn to mathematics and problem solving. I have always been interested in finding multiple ways to come up with a solution and then picking it apart to understand *why* it works that way. Fast forward to today and that means I love taking huge data sets and exploring their trends and outliers. The contexts for this type of exploration are endless! Population migration, industry clusters throughout the US, which college programs to offer, or even how the rural divide impacts student achievement. Learning how these things affect the world around us both positively and negatively can help determine the necessary steps to make improvements.
 
-Offline interests include a love of the outdoors, a major reason for calling the Hocking Hills region home. Not only are the local hiking trails a common adventure, she also enjoys escaping to nearby communities to take in their art and rich historical culture.
+Use the contact form below if you would like to learn more or to share any nifty big data finds you have come across.
