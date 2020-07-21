@@ -16,12 +16,3 @@ menu_title = "#fff"
 # Home sections
 home_section_odd = "rgb(255, 255, 255)"
 home_section_even = "rgb(247, 247, 247)"
-
-# Optional Google font URL
-google_fonts = "Kalam:400,700|Ubuntu:400,400italic,700|Ubuntu+Mono"
-
-# Font families
-heading_font = "Kalam"
-body_font = "Ubuntu"
-nav_font = "Ubuntu"
-mono_font = "Ubuntu Mono"
