@@ -33,11 +33,11 @@ slides: ""
 
 In the 1990's, Enron was known as one of the most innovative and successful companies in the United States. Though it began in the natural gas industry, Enron was able to spread into other utility industries and find ways to turn a profit. Unfortunately, this success is not what most people think of today when they hear "Enron." Today, the company is most remembered for accounting and stock scandals that eventually ended with a bankruptcy declaration for the company.
 
-While the circumstances are unfortunate, the amount of data that was made public following the investigation into Enron allows people to analyze for themselves what happened and who was likely involved. Numerous people have taken the subsequent email data and packaged it for others to look at from a data science perspective. One of the ideas behind these analyses are to try to figure out which people were likely at the center of the scandal. We will label these people as Persons of Interest (POIs) throughout the analysis. The dataset being used consists of 146 entries (18 persons of interest and 128 non-persons of interest) along with data concerning their financial involvement with Enron and their e-mail correspondence within the company. From that data, we will try to come up with a way to accurately classify a person as a POI or not.
+While the circumstances are unfortunate, the amount of data that was made public following the investigation into Enron allows people to analyze for themselves what happened and who was likely involved. When I first started looking into switching careers from education into a more data & computers area, I looked toward Udacity and Kaggle for courses and context in which to learn. This particular course attempts to figure out which people were likely at the center of the Enron scandal. We will label these people as Persons of Interest (POIs) throughout the analysis. The dataset being used consists of 146 entries (18 persons of interest and 128 non-persons of interest) along with data concerning their financial involvement with Enron and their e-mail correspondence within the company. From that data, we will try to come up with a way to accurately classify a person as a POI or not.
 
 ## Data Cleaning
 
-All cleaning and analysis utilized Python inside a Jupyter notebook. This allowed for comparisons in every step of the process. To start determining which pieces of the dataset might help catch persons of interest, calculations were completed to see correlations between POIs and non-POIs. The table below shows the features removed due to coverage concerns. If the model learned that a certain feature never (or always) appeared for a POI, it would fall back on that feature to categorize future POIs.
+All cleaning and analysis utilized Python inside a Jupyter notebook. This allowed for comparisons in every step of the process. To start determining which pieces of the dataset might help catch persons of interest, calculations were completed to see correlations between POIs and non-POIs. The table below shows the features removed due to coverage concerns. Since the scale is from 0 to 1, instances of one of the two endpoints are likely to be used to determine suspects. I did not want the model to focus solely on these features.
 
 | Feature                   | All        |  POIs       |  NonPOIs    |
 | ------------------------- | ---------- | ----------- | ----------- |
@@ -49,9 +49,7 @@ All cleaning and analysis utilized Python inside a Jupyter notebook. This allowe
 | total_payments            | 0.9        |  1.0        |  0.8        |
 | total_stock_value         | 0.9        |  1.0        |  0.9        |
 
-For additional exploration of outlier activity, seaborn was utilized to show boxplots of the possible features. This allowed a row corresponding to TOTAL to be found. This row is quite common on spreadsheets but unwanted when it comes to trying to predict POIs. As such, it was removed from the data. While the boxplots showed numerous other points that may statistically be categorized as outliers, they corresponded to actual employees and were kept. For instance, what appears to be an unnaturally large bonus or stock option for a particular employee may be a sure sign of being involved with the scandal.
-
-The next step became finalizing feature choice to help predict persons of interest. Using a Gaussian Naive Bayes classification, and normalizing some data points to be percentages instead of raw values yielded this final set of features:
+The next step became finalizing feature choice to help predict persons of interest. Using a Gaussian Naive Bayes classification, and normalizing some data points to be percentages instead of raw values yielded this final set of features. As shown in the table below, final features included information about finances (overall salary plus added bonuses) as well as email communication (especially whether the person corresponded often with other suspects).
 
 | Feature                     | Score |
 | --------------------------- | ----- |
@@ -67,7 +65,7 @@ In each of the following tests, validation was done using accuracy, precision, a
 
 ### Gaussian Naive Bayes
 
-As the GaussianNB algorithm has no tuning options, the initial run results are the only ones to consider. This yielded an accuracy of 84.375%, a precision of 100%, and a recall of 16.67%. This lets us know the algorithm is not classifying any Non-POIs as POIs, but it is also missing quite a few POIs that it should be catching.
+As the GaussianNB algorithm has no tuning options, the initial run results are the only ones to consider. This yielded an accuracy of 84.375%, a precision of 100%, and a recall of 16.67%. This lets me know the algorithm is not classifying any Non-POIs as POIs, but it is also missing quite a few POIs that it should be catching.
 
 ### Decision Tree
 
@@ -83,4 +81,4 @@ Parameters used in the GridSearchCV this time were the rate of learning and numb
 
 ## Final Thoughts
 
-Given the small size of the data set, the expectation was for Gaussian Naive Bayes to perform as well as, if not better, than more advanced classification techniques. While this was true as far as precision and overall accuracy, the fine-tuning capabilities of the more advanced algorithms let us improve recall drastically in the Decision Tree classifier. When choosing the best model to use, context must be considered. When you look at the data in the real world setting, you want to make sure you do not overlook potential persons of interest while not over-monitoring those who are likely innocent. In this scenario, that means having a high recall is preferred while still maintaining the highest precision possible. Out of the above results, I would utilize the Decision Tree model.
+Given the small size of the data set, the expectation was for Gaussian Naive Bayes to perform as well as, if not better, than more advanced classification techniques. While this was true as far as precision and overall accuracy, the fine-tuning capabilities of the more advanced algorithms let me improve recall drastically in the Decision Tree classifier. When choosing the best model to use, context must be considered. For this particular context, I want to ensure that I do not overlook potential persons of interest (high recall), while still not turning into Big Brother on those who are likely innocent (high precision). As this is a company setting and all the information technically belongs to the company and not the private person, I would lean toward higher recall being more important than precision. Because of that, I would utilize the Decision Tree model as it had the highest recall without losing too many points in precision to the other options.
