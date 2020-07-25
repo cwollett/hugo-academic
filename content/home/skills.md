@@ -33,12 +33,6 @@ subtitle = ""
   description = "Advanced use of Excel for tables and formulas to deliver data to team members; ability to use PowerPoint for quick development of easily accessible visualizations; knowledge of Power BI interface and visualizations to create interactive dashboards."  
   
 [[feature]]
-  icon = "search"
-  icon_pack = "fas"
-  name = "Attention to Detail"
-  description = "Highly detail-oriented, ensuring data and other deliverables are proof read prior to being presented to stakeholders."
-  
-[[feature]]
   icon = "puzzle-piece"
   icon_pack = "fas"
   name = "Problem Solving"
